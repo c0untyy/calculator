@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator-body">
+        <div class="title">
+          <h1>Calculator</h1>
+        </div>
+        <div class="display-container"></div>
+        <div class="button-container">
+          <div class="button-container-left">
+            <div class="first-row">
+              <button id="buttonDeleteAll" class="numpad">AC</button>
+              <button id="buttonDelete" class="numpad">C</button>
+              <button id="buttonMultiply" class="numpad">*</button>
+            </div>
+            <div class="second-row">
+              <button id="buttonSeven" class="numpad">7</button>
+              <button id="buttonEight" class="numpad">8</button>
+              <button id="buttonNine" class="numpad">9</button>
+            </div>
+            <div class="third-row">
+              <button id="buttonFour" class="numpad">4</button>
+              <button id="buttonFive" class="numpad">5</button>
+              <button id="buttonSix" class="numpad">6</button>
+            </div>
+            <div class="fourth-row">
+              <button id="buttonOne" class="numpad">1</button>
+              <button id="buttonTwo" class="numpad">2</button>
+              <button id="buttonThree" class="numpad">3</button>
+            </div>
+            <div class="fifth-row">
+              <button id="buttonZero" class="numpad">0</button>
+              <button id="buttonPoint" class="numpad">.</button>
+            </div>
+          </div>
+          <div class="button-container-right">
+            <div class="vertical-buttons-container">
+              <div class="vertical-row">
+                <button id="buttonMinus" class="numpad">-</button>
+                <button id="buttonPlus" class="numpad">+</button>
+                <button id="buttonEqualsTo" class="numpad">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
