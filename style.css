@@ -3,43 +3,52 @@
     font-weight: normal;
     font-family: 'Orbitron', sans-serif;
 }
-body{
-    padding:0;
-    margin:0;
-    background: linear-gradient(to bottom, #d8def2, #657dcc);
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #666666;
     height: 50vw;
     width: auto;
 }
-.footer{
+
+.footer {
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
 }
-.button-grid{
-    display:grid;
+
+.button-grid {
+    display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 115px);
     grid-template-rows: repeat(5, 110px);
 }
-.span-two{
+
+.span-two {
     grid-column: span 2;
 }
+
 .calculator-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    min-height: 50vw;
 }
 
 .calculator-body {
-    border: 1px solid black;
-    height: 725px;
+    border: .5rem solid black;
+    height: 730px;
     width: 500px;
-    margin-top: 125px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-style: double;
 }
 
 .display-container {
-    min-height: 6rem;
+    max-height: 8rem;
     border: 2px solid black;
     padding: 10px 20px;
     margin: 1rem;
@@ -47,6 +56,7 @@ body{
     text-align: right;
     word-wrap: break-word;
     word-break: break-all;
+    background-color: rgb(250, 212, 177, .8)
 }
 
 .lastresult {
@@ -62,10 +72,12 @@ body{
 .numpad {
     font-size: 3rem;
     cursor: pointer;
-    border:1px solid white;
+    border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
 }
-.numpad:hover{
-    background-color: rgba(255, 255, 255, .9);;
+
+.numpad:hover {
+    background-color: rgba(255, 255, 255, .9);
+    ;
 }

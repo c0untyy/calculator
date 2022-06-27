@@ -58,7 +58,7 @@ class Calculator {
     const stringNumber = number.toString();
     const integerDigits = parseFloat(stringNumber.split(".")[0]);
     const decimalDigits = stringNumber.split(".")[1];
-    let integerDisplay
+    let integerDisplay;
     if (isNaN(integerDigits)) {
       integerDisplay = "";
     } else {
@@ -73,13 +73,13 @@ class Calculator {
     }
   }
   updateDisplay() {
-    this.currentResult.innerText = 
-    this.getDisplayNumber(this.currentOperand);
+    this.currentResult.innerText = this.getDisplayNumber(this.currentOperand);
     if (this.operation != null) {
-      this.lastResult.innerText = 
-      `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
-    }else{
-      this.lastResult.innerText = '';
+      this.lastResult.innerText = `${this.getDisplayNumber(
+        this.previousOperand
+      )} ${this.operation}`;
+    } else {
+      this.lastResult.innerText = "";
     }
   }
 }
